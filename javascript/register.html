@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .container {
+            width: 550px;
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px gray;
+        }
+
+        h2 {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        input[type="date"] {
+            width: 95%;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .row div {
+            flex: 1;
+        }
+
+        .row input {
+            width: 85%;
+        }
+
+        .options {
+            margin-top: 10px;
+        }
+
+        .options label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+        }
+
+        .options input {
+            width: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        button {
+            padding: 12px 35px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .register {
+            background-color: #333;
+            color: white;
+        }
+
+        .reset {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <label>Full Name *</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email Address *</label>
+        <input type="email" placeholder="your@email.com" required>
+
+        <div class="row">
+            <div>
+                <label>Password *</label>
+                <input type="password" required>
+            </div>
+
+            <div>
+                <label>Confirm Password *</label>
+                <input type="password" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label>Mobile Number</label>
+                <input type="tel" placeholder="Mobile number">
+            </div>
+
+            <div>
+                <label>Date of Birth</label>
+                <input type="date">
+            </div>
+        </div>
+
+        <label>Gender</label>
+        <div class="options">
+            <label>
+                <input type="radio" name="gender" value="Male"> Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female"> Female
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Other"> Other
+            </label>
+        </div>
+
+        <label>Department</label>
+        <select style="width:100%;">
+            <option>CSE (AI & ML)</option>
+            <option>CSE</option>
+            <option>IT</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>Mechanical</option>
+        </select>
+
+        <label>Interests</label>
+        <div class="options">
+            <label>
+                <input type="checkbox" name="interest" value="Web Development">
+                Web Development
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="AI/ML">
+                AI / ML
+            </label>
+
+            <label>
+                <input type="checkbox" name="interest" value="Cloud">
+                Cloud
+            </label>
+        </div>
+
+        <div class="options">
+            <label>
+                <input type="checkbox" required>
+                I agree to the Terms & Conditions and Privacy Policy.
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button type="submit" class="register">
+                Register
+            </button>
+
+            <button type="reset" class="reset">
+                Reset
+            </button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
