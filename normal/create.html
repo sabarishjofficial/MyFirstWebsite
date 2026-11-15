@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>securebox</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            form {
+                margin: 0 auto;
+                width: 300px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 20px;
+                background-color: blue;
+                color: white;
+            }
+        </style>
+    </head>
+    <body id="securebox" style="background-color:lightblue">
+        <h1 align="center" style="color:blue">SECUREBOX</h1>
+        <p align="center" style="color:brown">fast and secure</p>
+        <form>
+            <label >Username:</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label >Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label>confirm <br>
+                password:</label>
+            <input type="password" id="confirmpassword" name="confirmpassword" required><br><br>
+            <label>Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+            <button>submit</button>
+        </form>
+    </body>
+
+</html>
