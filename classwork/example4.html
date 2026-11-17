@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            function student(name, event){
+                this.name = name;
+                this.event=event;
+
+            }
+            student.prototype.intro= function(){
+                console.log( this.name + " registered for " + this.event);
+            };
+            const s1=new student("parishith","coding");
+            const s2=new student("sathish","debugging");
+            s1.intro();
+            s2.intro();
+
+        </script>
+    </body>
+</html>
